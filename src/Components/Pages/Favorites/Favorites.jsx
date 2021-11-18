@@ -12,7 +12,6 @@ import { useSelector,useDispatch } from 'react-redux'
  const Favorites = () => {
     const data = useSelector((state) => state)
     const dispatch = useDispatch()
-    console.log(data)
     return (
         <div  id="favorite-container">
             <h1 className="favorite-headline">favorite page</h1>

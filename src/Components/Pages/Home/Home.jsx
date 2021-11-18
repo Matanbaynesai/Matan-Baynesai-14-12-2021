@@ -21,19 +21,11 @@ const Home = () => {
   const [dailyForcast, setDailyForcast] = useState([]);
   const [weaklyForcast, setWeaklyForcast] = useState([]);
   const data = useSelector((state) => state);
-  console.log(data);
 
   const isItOnFavorite = data.map(item => {
     return item.key.toString()
   })
-  console.log(isItOnFavorite);
-  console.log(searchResults[0]?.Key);
 
-  
-  
-
-  
-  // console.log(isItOnFavorite );
   const dispatch = useDispatch();
   function onCityChange(e) {
     setCitySearch(e.target.value);
@@ -71,10 +63,8 @@ const Home = () => {
       console.error(error);
     }
   }
-  // const isItOnFavorite = data.map((item) =>
-  //   item.key === searchResults
-  // );
-  // window.onload = search();
+ 
+   window.onload = search();
   console.log(dailyForcast);
 
 

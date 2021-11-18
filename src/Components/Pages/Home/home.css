@@ -20,11 +20,9 @@ body{
 .search-area{
     display: flex;
     flex-direction: column;
-    /* align-self: center; */
     font-family: fantasy;
     color: black;
     width: 30%;
-    /* padding-top: 10px; */
 }
 
 .cards-container{
@@ -37,16 +35,8 @@ body{
 .daily-cards{
     padding-right:20px ;
     align-self: flex-start;
-    /* width: 100px;
-    height:100px; */
 }
 .weekly-cards{
-    /* position:absolute; */
-   /* display: flex;
-   width: 400px;
-   padding: 10px;
-   flex-direction: row;
-   align-self: center; */
    display: flex;
    padding: 10px;
    width: 300px;

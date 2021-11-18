@@ -1,6 +1,5 @@
 import React from "react";
 import "./navbar.css";
-// import HomeIcon from '@mui/icons-material/Home';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "../../Pages/Home/Home";
 import Favorites from "../../Pages/Favorites/Favorites";

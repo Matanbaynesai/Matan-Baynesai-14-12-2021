@@ -1,6 +1,5 @@
 #favorite-container{
     display: flex;
-    /* flex-flow:column-reverse; */
     padding: 30px;
     justify-content: center;
  }
