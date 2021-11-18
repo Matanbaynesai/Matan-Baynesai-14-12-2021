@@ -1,0 +1,16 @@
+#favorite-container{
+    display: flex;
+    /* flex-flow:column-reverse; */
+    padding: 30px;
+    justify-content: center;
+ }
+ .favorite-cards{
+     display: flex;
+     justify-content: space-between;
+     align-self: center;
+    padding: 20px;
+ }
+ .favorite-headline{
+     font-weight: bold;
+     font-family:Arial, Helvetica, sans-serif;
+ }

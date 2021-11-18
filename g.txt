@@ -1,0 +1,110 @@
+{dailyForcast[0]?.DailyForecasts.map((item) => {
+        return (
+          <div className="cards-container">
+            <Card className="cards">
+              <CardActionArea>
+                <CardMedia />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="h2">
+                    {item.Temperature.Value}
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    color="textSecondary"
+                    component="p"
+                  >
+                    <h2>{citySearch}</h2>
+                    {item.Temperature.Maximum.UnitType}
+                    {item.Temperature.Maximum.Unit}
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+              <CardActions>
+                {
+                        isItOnFavorite ?"its in your cart": <Button
+                        onClick={() => {
+                          dispatch(
+                            AddWeather({
+                              city: citySearch,
+                              temp: item.Temperature.Maximum.UnitType,
+                              key: locationKey,
+                            })
+                          );
+                        }}
+                        size="small"
+                        color="primary"
+                      >
+                        save as favorite
+                      </Button>
+                      }
+               
+
+                <Button
+                  onClick={() => {
+                    dispatch(DeleteWeather({ key: locationKey }));
+                  }}
+                  size="small"
+                  color="primary"
+                >
+                  remove from favorite
+                </Button>
+              </CardActions>
+            </Card>
+            {/* {weaklyForcast[0].DailyForecasts?.map((item) => {
+              return (
+                <div className="weekly-cards">
+                  <Card className="cards">
+                    <CardActionArea>
+                      <CardMedia />
+                      <CardContent>
+                        <Typography gutterBottom variant="h5" component="h2">
+                          {item.Temperature.Value}
+                        </Typography>
+                        <Typography
+                          variant="body2"
+                          color="textSecondary"
+                          component="p"
+                        >
+                          <p>{item.Date}</p>
+                          <h2>{citySearch}</h2>
+                          {item.Temperature.Maximum.UnitType}
+                          {item.Temperature.Maximum.Unit}
+                        </Typography>
+                      </CardContent>
+                    </CardActionArea>
+                    <CardActions>
+                      {/* {
+                        isItOnFavorite ?"its in your cart":
+                      } */}
+                    {/* </CardActions> */}
+             {/* //</header>     </Card> */}
+            {/* //    </div> */}
+           {/* //   ); */}
+           {/* // })} */} 
+          </div>
+        );
+      })}
+       let weather = [
+    {
+      description: "cold",
+      image:
+        "https://image.shutterstock.com/image-vector/cold-weather-icon-260nw-157883522.jpg",
+      degree: 10,
+      description: "sunny",
+      image:
+        "https://cdn4.vectorstock.com/i/1000x1000/68/93/sunny-day-weather-forecast-info-icon-yellow-sun-vector-24566893.jpg",
+      degree: 20,
+      description: "hot",
+      image:
+        "https://townsquare.media/site/705/files/2021/06/attachment-RS45164_GettyImages-1150050227-scr1.jpg?w=980&q=75",
+      degree: 36,
+      description: "rainy",
+      image:
+        "https://previews.123rf.com/images/carbo82/carbo821206/carbo82120600086/14194625-icon-rainy-weather.jpg",
+      degree: 15,
+      description: "wind",
+      image:
+        "https://previews.123rf.com/images/carbo82/carbo821206/carbo82120600086/14194625-icon-rainy-weather.jpg",
+      degree: 19,
+    },
+  ];

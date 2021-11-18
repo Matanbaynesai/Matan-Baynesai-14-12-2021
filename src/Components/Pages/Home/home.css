@@ -1,0 +1,69 @@
+body{
+    background-image: 
+    linear-gradient(                    
+   rgba(126,213,111,0.3)
+   ,rgba(40,180,131,0.8)),
+   url("https://wallpaperaccess.com/full/680914.jpg");
+   background-size:cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+}
+.home-container {
+    height:100vh;
+    display: flex;
+    justify-content:center ;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+} 
+.search-area{
+    display: flex;
+    flex-direction: column;
+    /* align-self: center; */
+    font-family: fantasy;
+    color: black;
+    width: 30%;
+    /* padding-top: 10px; */
+}
+
+.cards-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    flex-wrap: wrap;
+    width:90%;
+}
+.daily-cards{
+    padding-right:20px ;
+    align-self: flex-start;
+    /* width: 100px;
+    height:100px; */
+}
+.weekly-cards{
+    /* position:absolute; */
+   /* display: flex;
+   width: 400px;
+   padding: 10px;
+   flex-direction: row;
+   align-self: center; */
+   display: flex;
+   padding: 10px;
+   width: 300px;
+   height: 400px;
+}
+
+.search-btn{
+    width:80px;
+    height: 25px;
+    border: none;
+    color: white;
+    background-color: rgb(255,0,68);
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 0 #f9e506;
+    transition: ease-out 0.3s;
+    outline: none;
+}
+.search-btn:hover{
+    box-shadow: inset  80px 0 0 #f9e506;
+}
