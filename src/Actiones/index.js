@@ -8,10 +8,10 @@ export const AddWeather = (obj)=>{
   }
 }}
   
-export const DeleteWeather = ()=>{
+export const DeleteWeather = (key)=>{
    return {
      type:"DELETE_WEATHER",
     payload:{
-      id:1
+      key:key
     }
   }} 
