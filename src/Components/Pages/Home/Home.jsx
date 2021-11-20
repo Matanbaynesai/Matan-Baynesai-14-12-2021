@@ -16,11 +16,14 @@ import {
 
 const Home = () => {
   const [citySearch, setCitySearch] = useState("Tel aviv");
-  const [locationKey, setLocationKey] = useState("215854");
   const [searchResults, setSearchResults] = useState([]);
   const [dailyForcast, setDailyForcast] = useState([]);
   const [weaklyForcast, setWeaklyForcast] = useState([]);
   const data = useSelector((state) => state);
+
+  useEffect(() => {
+    search();
+  }, [])
 
   const isItOnFavorite = data.map(item => {
     return item.key.toString()
@@ -64,7 +67,7 @@ const Home = () => {
     }
   }
  
-   window.onload = search();
+  //  window.onload = search();
   console.log(dailyForcast);
 
 
@@ -74,7 +77,7 @@ const Home = () => {
         <label htmlFor="search">Search City</label>
         <input onChange={onCityChange} type="text" />
         <button onClick={ search} className="search-btn">
-          search
+          Search
         </button>
       </div>
       <ul className="cards-container">
@@ -116,16 +119,6 @@ const Home = () => {
                     save as favorite
                   </Button>
                   }
-                
-                  <Button
-                    onClick={() => {
-                      dispatch(DeleteWeather({ key: locationKey }));
-                    }}
-                    size="small"
-                    color="primary"
-                  >
-                    remove from favorite
-                  </Button>
                 </CardActionArea>
               </Card>
             </li>
