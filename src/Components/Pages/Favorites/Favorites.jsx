@@ -14,7 +14,7 @@ import { useSelector,useDispatch } from 'react-redux'
     const dispatch = useDispatch()
     return (
         <div  id="favorite-container">
-            <h1 className="favorite-headline">favorite page</h1><br/>
+            <h1 className="favorite-headline">favorite page</h1>
 
             {
                 data.map(item=>{

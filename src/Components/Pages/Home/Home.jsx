@@ -30,7 +30,7 @@ const Home = () => {
   })
 
   const dispatch = useDispatch();
-  function onCityChange(e) {
+  async function onCityChange(e) {
     setCitySearch(e.target.value);
   }
 
@@ -73,7 +73,7 @@ const Home = () => {
       <div className="search-area">
         <label htmlFor="search">Search City</label>
         <input onChange={onCityChange} type="text" />
-        <button onClick={ search} className="search-btn">
+        <button onClick={search} className="search-btn">
           Search
         </button>
       </div>
