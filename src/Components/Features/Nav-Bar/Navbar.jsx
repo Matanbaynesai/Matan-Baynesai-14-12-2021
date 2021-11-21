@@ -9,7 +9,7 @@ const Navbar = () => {
     <Router>
       <nav className="navbar-container">
         <div className="logo">
-          <h1>logo</h1>
+          <img src="https://blog.herolo.co.il/wp-content/uploads/2019/12/logo.png" height="50" alt="" />
         </div>
         <ul className="nav-bar">
           <li>

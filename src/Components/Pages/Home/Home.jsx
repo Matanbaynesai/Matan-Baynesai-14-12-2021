@@ -22,7 +22,7 @@ const Home = () => {
   const data = useSelector((state) => state);
 
   useEffect(() => {
-    search();
+    search()
   }, [])
 
   const isItOnFavorite = data.map(item => {
