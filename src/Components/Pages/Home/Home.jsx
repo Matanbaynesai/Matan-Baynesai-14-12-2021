@@ -67,9 +67,6 @@ const Home = () => {
     }
   }
  
-  //  window.onload = search();
-  console.log(dailyForcast);
-
 
   return (
     <header className="home-container">

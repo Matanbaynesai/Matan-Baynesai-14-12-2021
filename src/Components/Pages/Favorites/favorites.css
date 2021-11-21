@@ -5,7 +5,6 @@
  }
  .favorite-cards{
      display: flex;
-     /* justify-content: space-between; */
      flex-direction: column;
      align-self: center;
     padding: 20px;
